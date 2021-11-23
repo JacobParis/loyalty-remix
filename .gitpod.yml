@@ -1,0 +1,25 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: npm install # runs during prebuild
+    command: npm start
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
+    - sleistner.vscode-fileutils
+    - eamodio.gitlens
+    - heybourn.headwind
+    - bradlc.vscode-tailwindcss
+    # - spmeesseman.vscode-taskexplorer
+    - oderwat.indent-rainbow
+    - wix.vscode-import-cost
+    # - cardinal90.multi-cursor-case-preserve
+    - christian-kohler.npm-intellisense
+    - christian-kohler.path-intellisense
+    - csstools.postcss
