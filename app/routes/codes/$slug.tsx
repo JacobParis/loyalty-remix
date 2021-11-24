@@ -36,7 +36,7 @@ export const meta: MetaFunction = () => {
     description: "Welcome to remix!",
   }
 }
-
+import QRCode from "react-qr-code"
 // https://remix.run/guides/routing#index-routes
 export default function Index() {
   const { code, names } = useLoaderData<IndexData>()
@@ -65,8 +65,6 @@ export default function Index() {
             <form
               onSubmit={(event) => {
                 event.preventDefault()
-
-                mutation.mutate({ active: !code.active })
               }}
             >
               <h2 className="tracking-wide text-gray-600">
